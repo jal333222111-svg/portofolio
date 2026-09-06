@@ -1,0 +1,290 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: #050816;
+  color: white;
+  font-family: 'Rajdhani', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Glow */
+.background-glow{
+  position: fixed;
+
+  width: 700px;
+  height: 700px;
+
+  background: rgba(139,92,246,0.15);
+
+  filter: blur(150px);
+
+  top: -250px;
+  right: -250px;
+
+  z-index: -1;
+}
+
+/* Navbar */
+.navbar{
+  width: 100%;
+  padding: 20px 8%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: fixed;
+
+  backdrop-filter: blur(12px);
+
+  background: rgba(255,255,255,0.03);
+
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+
+  z-index: 100;
+}
+
+.logo{
+  font-size: 24px;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: bold;
+
+  color: #00F5FF;
+}
+
+nav ul{
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+nav a{
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+nav a:hover,
+.active-nav{
+  color: #00F5FF;
+}
+
+/* Section */
+.contact-section{
+  padding: 150px 8% 100px;
+}
+
+.contact-title{
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.small-title{
+  color: #00F5FF;
+  letter-spacing: 3px;
+
+  margin-bottom: 15px;
+}
+
+.contact-title h1{
+  font-size: 70px;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.description{
+  margin-top: 20px;
+  color: #cbd5e1;
+}
+
+/* Container */
+.contact-container{
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* Info */
+.contact-info{
+  flex: 1;
+  min-width: 300px;
+}
+
+.info-card{
+  padding: 35px;
+
+  border-radius: 25px;
+
+  background: rgba(255,255,255,0.04);
+
+  border: 1px solid rgba(255,255,255,0.08);
+
+  backdrop-filter: blur(12px);
+}
+
+.info-card h2{
+  font-size: 35px;
+
+  margin-bottom: 30px;
+
+  color: #00F5FF;
+
+  font-family: 'Orbitron', sans-serif;
+}
+
+.info-item{
+  margin-bottom: 25px;
+}
+
+.info-item span{
+  color: #00F5FF;
+}
+
+.info-item p{
+  margin-top: 8px;
+  color: #cbd5e1;
+}
+
+/* Form */
+.contact-form{
+  flex: 1;
+  min-width: 300px;
+}
+
+form{
+  padding: 35px;
+
+  border-radius: 25px;
+
+  background: rgba(255,255,255,0.04);
+
+  border: 1px solid rgba(255,255,255,0.08);
+
+  backdrop-filter: blur(12px);
+}
+
+.input-group{
+  margin-bottom: 25px;
+}
+
+.input-group label{
+  display: block;
+
+  margin-bottom: 10px;
+
+  color: #00F5FF;
+}
+
+.input-group input,
+.input-group textarea{
+  width: 100%;
+
+  padding: 15px;
+
+  border-radius: 12px;
+
+  border: 1px solid rgba(255,255,255,0.08);
+
+  background: rgba(255,255,255,0.03);
+
+  color: white;
+
+  outline: none;
+
+  font-family: 'Rajdhani', sans-serif;
+}
+
+textarea{
+  height: 150px;
+  resize: none;
+}
+
+/* Button */
+button{
+  width: 100%;
+
+  padding: 16px;
+
+  border: none;
+
+  border-radius: 12px;
+
+  background: #00F5FF;
+
+  color: black;
+
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+button:hover{
+  box-shadow: 0 0 20px #00F5FF;
+}
+
+/* Terminal Header */
+.terminal-header{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  margin-bottom: 30px;
+
+  padding-bottom: 15px;
+
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.terminal-header p{
+  margin-left: 10px;
+
+  color: #00F5FF;
+
+  font-family: 'Orbitron', sans-serif;
+
+  font-size: 14px;
+}
+
+/* Dots */
+.dot{
+  width: 12px;
+  height: 12px;
+
+  border-radius: 50%;
+}
+
+.red{
+  background: #ff4d4d;
+}
+
+.yellow{
+  background: #ffd93d;
+}
+
+.green{
+  background: #00ff88;
+}
+
+/* Online Status */
+.online-status{
+  color: #00ff88;
+  font-weight: bold;
+}
+
+/* Responsive */
+@media(max-width:900px){
+
+  .contact-title h1{
+    font-size: 50px;
+  }
+
+  nav{
+    display: none;
+  }
+
+}

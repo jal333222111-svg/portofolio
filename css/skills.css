@@ -1,0 +1,255 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: #050816;
+  color: white;
+  font-family: 'Rajdhani', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Glow */
+.background-glow{
+  position: fixed;
+
+  width: 700px;
+  height: 700px;
+
+  background: rgba(0,255,255,0.12);
+
+  filter: blur(150px);
+
+  top: -250px;
+  left: -250px;
+
+  z-index: -1;
+}
+
+/* Navbar */
+.navbar{
+  width: 100%;
+  padding: 20px 8%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: fixed;
+
+  backdrop-filter: blur(12px);
+
+  background: rgba(255,255,255,0.03);
+
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.logo{
+  font-size: 24px;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: bold;
+
+  color: #00F5FF;
+}
+
+nav ul{
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+nav a{
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+nav a:hover,
+.active-nav{
+  color: #00F5FF;
+}
+
+/* Skills */
+.skills-section{
+  padding: 150px 8% 80px;
+}
+
+.skills-title{
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.small-title{
+  color: #00F5FF;
+  letter-spacing: 3px;
+  margin-bottom: 15px;
+}
+
+.skills-title h1{
+  font-size: 70px;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.description{
+  margin-top: 20px;
+  color: #cbd5e1;
+}
+
+/* Skill Container */
+.skills-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+  gap: 30px;
+}
+
+/* Card */
+.skill-card{
+  padding: 30px;
+
+  border-radius: 20px;
+
+  background: rgba(255,255,255,0.04);
+
+  border: 1px solid rgba(255,255,255,0.08);
+
+  backdrop-filter: blur(12px);
+
+  transition: 0.3s;
+}
+
+.skill-card:hover{
+  transform: translateY(-10px);
+
+  border-color: #00F5FF;
+
+  box-shadow: 0 0 20px rgba(0,255,255,0.15);
+}
+
+.skill-header{
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 20px;
+}
+
+.skill-header h2{
+  font-size: 28px;
+}
+
+/* Progress */
+.progress-bar{
+  width: 100%;
+  height: 12px;
+
+  background: rgba(255,255,255,0.08);
+
+  border-radius: 20px;
+
+  overflow: hidden;
+}
+
+.progress{
+  height: 100%;
+
+  background: linear-gradient(
+    90deg,
+    #00F5FF,
+    #8B5CF6
+  );
+
+  border-radius: 20px;
+}
+
+/* Width */
+.html{
+  width: 95%;
+}
+
+.css{
+  width: 90%;
+}
+
+.js{
+  width: 75%;
+}
+
+.php{
+  width: 85%;
+}
+
+.mysql{
+  width: 80%;
+}
+
+.laravel{
+  width: 70%;
+}
+
+/* Stats */
+.stats-section{
+  padding: 0 8% 100px;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+
+  gap: 30px;
+}
+
+.stats-card{
+  padding: 40px;
+
+  text-align: center;
+
+  border-radius: 20px;
+
+  background: rgba(255,255,255,0.04);
+
+  border: 1px solid rgba(255,255,255,0.08);
+
+  transition: 0.3s;
+}
+
+.stats-card:hover{
+  transform: scale(1.03);
+
+  border-color: #00F5FF;
+
+  box-shadow: 0 0 20px rgba(0,255,255,0.15);
+}
+
+.stats-card h2{
+  font-size: 28px;
+  margin-bottom: 20px;
+
+  color: #00F5FF;
+
+  font-family: 'Orbitron', sans-serif;
+}
+
+.stats-card p{
+  font-size: 40px;
+  font-weight: bold;
+}
+
+/* Additional Skills */
+.office{
+  width: 85%;
+}
+
+.admin{
+  width: 80%;
+}
+/* Responsive */
+@media(max-width:900px){
+
+  .skills-title h1{
+    font-size: 50px;
+  }
+
+  nav{
+    display: none;
+  }
+
+}
